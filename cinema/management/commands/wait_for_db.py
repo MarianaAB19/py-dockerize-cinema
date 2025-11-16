@@ -4,7 +4,7 @@ from django.db import OperationalError, connections
 
 
 class Command(BaseCommand):
-    help_text = "Waits for the database to be available"
+    help = "Waits for the database to be available"
 
     def handle(self, *args, **kwargs):
         while True:
